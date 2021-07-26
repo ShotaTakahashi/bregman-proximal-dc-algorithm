@@ -1,4 +1,5 @@
 # Bregman Proximal DC Algorithms
+Details: https://arxiv.org/abs/2105.04873
 
 ## Available Algorithms
 - Bregman Proximal Gradient Algorithm (BPG)
