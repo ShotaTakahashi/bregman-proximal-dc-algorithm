@@ -27,4 +27,8 @@ def cubic_eq_with_normalization(u):
 
 
 def bregman_distance(kernel, grad):
+    return lambda x, y: kernel(x) - kernel(y) - np.dot(grad(y), x - y)
+
+
+def bregman_distance_complex(kernel, grad):
     return lambda x, y: kernel(x) - kernel(y) - 2*np.real(np.dot(grad(y), np.conj(x - y)))
