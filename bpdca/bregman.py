@@ -1,9 +1,9 @@
 import numpy.linalg as LA
 from bpdca.iteration import Extrapolation
 from bpdca.dca import DifferenceOfConvexExtrapolation
-from bpdca.toolbox.tool import *
+from bpdca.toolbox.tool import bregman_distance, soft_thresholding
 
-LEAST_ITER = 0
+LEAST_ITER = 10000
 
 
 class Bregman:
